@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="materi.html">Materi</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="about.html">About Me</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+      <h1>Quiz Page</h1>
+    </div>
+  </body>
+</html>
+
+<!-- Quiz -->
+<section id="kuis">
+  <h1></h1>
+  <p>
+    <!DOCTYPE html>
+    <html lang="id">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+          body {
+            background-color: #ffffff;
+            color: rgb(35, 33, 33);
+            font-family: Arial, sans-serif;
+            text-align: center;
+          }
+          .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            background-color: white;
+            margin: 30px auto;
+            width: 60%;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          }
+          .container h1 {
+            font-size: 36px;
+            color: #333;
+          }
+          .quiz-container {
+            width: 60%;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+          }
+          .question {
+            margin: 15px 0;
+          }
+          button {
+            background-color: green;
+            color: rgb(35, 33, 33);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="quiz-container">
+          <form id="quizForm">
+            <div class="question">
+              <p>1. Apa kepanjangan dari HTML?</p>
+              <input type="radio" name="q1" value="0" /> High Tech Modern
+              Language<br />
+              <input type="radio" name="q1" value="1" /> Hyper Text Markup
+              Language<br />
+              <input type="radio" name="q1" value="0" /> Hyperlink and Text
+              Markup Language<br />
+            </div>
+            <div class="question">
+              <p>
+                2. Bahasa pemrograman mana yang digunakan untuk styling halaman
+                web?
+              </p>
+              <input type="radio" name="q2" value="0" /> JavaScript<br />
+              <input type="radio" name="q2" value="1" /> CSS<br />
+              <input type="radio" name="q2" value="0" /> Python<br />
+            </div>
+            <div class="question">
+              <p>3. Tag mana yang digunakan untuk membuat hyperlink di HTML?</p>
+              <input type="radio" name="q3" value="1" /> &lt;a&gt;<br />
+              <input type="radio" name="q3" value="0" /> &lt;link&gt;<br />
+              <input type="radio" name="q3" value="0" /> &lt;h1&gt;<br />
+            </div>
+            <div class="question">
+              <p>4. Bagaimana cara mendeklarasikan variabel di JavaScript?</p>
+              <input type="radio" name="q4" value="1" /> var x = 10;<br />
+              <input type="radio" name="q4" value="0" /> let: x = 10;<br />
+              <input type="radio" name="q4" value="0" /> const x -> 10;<br />
+            </div>
+            <div class="question">
+              <p>
+                5. Manakah yang termasuk pustaka populer dalam Python untuk
+                analisis data?
+              </p>
+              <input type="radio" name="q5" value="1" /> Pandas<br />
+              <input type="radio" name="q5" value="0" /> Flask<br />
+              <input type="radio" name="q5" value="0" /> Django<br />
+            </div>
+            <div class="question">
+              <p>
+                6. Properti CSS mana yang digunakan untuk mengubah warna teks?
+              </p>
+              <input type="radio" name="q6" value="0" />
+              background-color<br />
+              <input type="radio" name="q6" value="1" /> color<br />
+              <input type="radio" name="q6" value="0" /> font-style<br />
+            </div>
+            <div class="question">
+              <p>7. Bagaimana cara menampilkan pesan di JavaScript?</p>
+              <input type="radio" name="q7" value="0" /> print("Hello World")<br />
+              <input type="radio" name="q7" value="1" /> alert("Hello World")<br />
+              <input type="radio" name="q7" value="0" /> msg("Hello World")<br />
+            </div>
+            <div class="question">
+              <p>8. Apa fungsi dari tag &lt;head&gt; dalam HTML?</p>
+              <input type="radio" name="q8" value="1" /> Berisi informasi meta
+              dan link ke CSS/JavaScript<br />
+              <input type="radio" name="q8" value="0" /> Menampilkan isi utama
+              website<br />
+              <input type="radio" name="q8" value="0" /> Mengatur tampilan
+              halaman web<br />
+            </div>
+            <div class="question">
+              <p>
+                9. Manakah framework yang digunakan untuk pengembangan backend
+                dengan Python?
+              </p>
+              <input type="radio" name="q9" value="0" /> React<br />
+              <input type="radio" name="q9" value="1" /> Django<br />
+              <input type="radio" name="q9" value="0" /> Bootstrap<br />
+            </div>
+            <div class="question">
+              <p>
+                10. Properti CSS mana yang digunakan untuk membuat teks menjadi
+                tebal?
+              </p>
+              <input type="radio" name="q10" value="0" /> font-size<br />
+              <input type="radio" name="q10" value="1" /> font-weight<br />
+              <input type="radio" name="q10" value="0" /> text-align<br />
+            </div>
+            <button type="button" onclick="checkAnswers()">Submit</button>
+          </form>
+          <h2 id="result"></h2>
+        </div>
+        <script>
+          function checkAnswers() {
+            let score = 0;
+            let answers = document.querySelectorAll(
+              'input[type="radio"]:checked'
+            );
+            answers.forEach((ans) => {
+              score += parseInt(ans.value);
+            });
+            document.getElementById("result").innerText =
+              "Skor Anda: " + score + " / 10";
+          }
+        </script>
+      </body>
+    </html>
+  </p>
+</section>
+
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Web Programmer Tirta Barus. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
